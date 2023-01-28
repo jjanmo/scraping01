@@ -12,18 +12,10 @@ from selenium.webdriver.support import expected_conditions as ec
 # search pagination
 
 class GoogleSearchingScreenshot:
-    def __init__(self, keyword, storage_path):
+    def __init__(self, browser, keyword, storage_path):
+        self.browser = browser
         self.keyword = keyword
         self.storage_path = storage_path
-        self.browser = self.__set_browser()
-
-    def __set_browser(self):
-        options = Options()
-        options.add_experimental_option("detach", True)  # prevent auto-Off
-        browser = webdriver.Chrome(options=options, service=ChromeService(ChromeDriverManager().install()))
-        browser.get('https://www.google.com')
-
-        return browser
 
     def get_screenshots(self):
         search_bar = self.browser.find_element(By.CLASS_NAME, 'gLFyf')  # select google input
