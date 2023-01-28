@@ -26,5 +26,7 @@ class ResponsiveTester:
                 time.sleep(2)
                 self.browser.save_screenshot(f'screenshots/{path}/{size}_{section}.png')
 
-    def finish(self):
+        self.quit()
+
+    def quit(self):
         self.browser.quit()
