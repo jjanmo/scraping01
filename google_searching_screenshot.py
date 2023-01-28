@@ -8,6 +8,9 @@ from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.support import expected_conditions as ec
 
 
+# more challenge
+# search pagination
+
 class GoogleSearchingScreenshot:
     def __init__(self, keyword, storage_path):
         self.keyword = keyword
