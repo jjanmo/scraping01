@@ -1,6 +1,6 @@
 import time
 from math import ceil
-from utils import set_path
+from common.utils import set_path
 
 SIZES = [480, 960, 1280, 1960]
 

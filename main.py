@@ -1,6 +1,6 @@
-from browser import Browser
-from google_searching_screenshot import GoogleSearchingScreenshot
-from responsive_tester import ResponsiveTester
+from common.browser import Browser
+from features.google_searching_screenshot import GoogleSearchingScreenshot
+from features.responsive_tester import ResponsiveTester
 
 google_browser = Browser('https://www.google.com').get_browser()
 
